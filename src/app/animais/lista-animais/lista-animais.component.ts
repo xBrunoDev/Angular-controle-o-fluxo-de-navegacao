@@ -21,9 +21,8 @@ export class ListaAnimaisComponent implements OnInit {
     this.usuarioService.retornaUsuario().subscribe((usuario) => {
       const userName = usuario.name ?? '';
       this.animaisService.listaDoUsuario(userName).subscribe((animais) => {
-        this.animais;
-      })
-    })
+        this.animais = animais;
+      });
+    });
   }
-
 }

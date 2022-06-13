@@ -2,8 +2,9 @@ export interface Animal {
   id: number;
   postDate: Date;
   url: string;
-  description: string
-  allorComents: boolean
+  description: string;
+  allowComents: boolean;
+  likes: number;
   comments: number;
   userID: number;
 }

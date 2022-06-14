@@ -1,4 +1,3 @@
-import { error } from 'console';
 import { AnimaisService } from './../animais.service';
 import { Animal } from './../animais';
 import { Observable } from 'rxjs';

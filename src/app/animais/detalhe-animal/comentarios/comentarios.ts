@@ -1,7 +1,7 @@
 export interface Comentario {
-  date: Date,
-  text: string;
   userName: string
+  text: string;
+  date: Date,
 }
 
 export type Comentarios = Array<Comentario>

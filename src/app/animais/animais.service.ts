@@ -1,10 +1,11 @@
 import { environment } from './../../environments/environment.prod';
 import { TokenService } from './../autenticacao/token.service';
-import { Observable, of, throwError } from 'rxjs';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
-import { Injectable } from '@angular/core';
 import { Animais, Animal } from './animais';
+import { Injectable } from '@angular/core';
+
 import { catchError, mapTo } from 'rxjs/operators';
+import { Observable, of, throwError } from 'rxjs';
 
 const API = environment.apiURL;
 const NOT_MODIFIED = '304' ;

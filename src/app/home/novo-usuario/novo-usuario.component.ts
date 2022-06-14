@@ -1,11 +1,11 @@
-import { Component, OnInit } from '@angular/core';
-import { FormBuilder, FormGroup, Validators } from '@angular/forms';
-import { Router } from '@angular/router';
-import { minusculoValidator } from './minusculo.validator';
-import { NovoUsuario } from './novo-usuario';
-import { NovoUsuarioService } from './novo-usuario.service';
-import { UsuarioExisteService } from './usuario-existe.service';
 import { usuarioSenhaIguaisValidator } from './usuario-senha-iguais.validator';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { UsuarioExisteService } from './usuario-existe.service';
+import { NovoUsuarioService } from './novo-usuario.service';
+import { minusculoValidator } from './minusculo.validator';
+import { Component, OnInit } from '@angular/core';
+import { NovoUsuario } from './novo-usuario';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-novo-usuario',
@@ -16,10 +16,10 @@ export class NovoUsuarioComponent implements OnInit {
   novoUsuarioForm!: FormGroup;
 
   constructor(
+    private router: Router,
     private formBuilder: FormBuilder,
     private novoUsuarioService: NovoUsuarioService,
     private usuarioExistenteServive: UsuarioExisteService,
-    private router: Router
   ) {}
 
   ngOnInit(): void {

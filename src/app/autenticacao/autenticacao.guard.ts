@@ -1,6 +1,6 @@
+import { CanLoad, Route, UrlSegment, UrlTree, Router } from '@angular/router';
 import { UsuarioService } from './usuario/usuario.service';
 import { Injectable } from '@angular/core';
-import { CanLoad, Route, UrlSegment, ActivatedRouteSnapshot, RouterStateSnapshot, UrlTree, Router } from '@angular/router';
 import { Observable } from 'rxjs';
 
 @Injectable({

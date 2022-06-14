@@ -1,8 +1,9 @@
-import { AnimaisService } from './../animais.service';
-import { Animal } from './../animais';
-import { Observable } from 'rxjs';
-import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
+import { AnimaisService } from './../animais.service';
+import { Component, OnInit } from '@angular/core';
+import { Animal } from './../animais';
+
+import { Observable } from 'rxjs';
 
 @Component({
   selector: 'app-detalhe-animal',

@@ -1,12 +1,12 @@
 export interface Animal {
-  id: number;
-  postDate: Date;
-  url: string;
-  description: string;
   allowComents: boolean;
-  likes: number;
+  description: string;
   comments: number;
+  postDate: Date;
   userID: number;
+  likes: number;
+  url: string;
+  id: number;
 }
 
 export type Animais = Array<Animal>;

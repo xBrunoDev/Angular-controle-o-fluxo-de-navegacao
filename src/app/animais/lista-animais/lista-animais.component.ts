@@ -1,9 +1,10 @@
-import { switchMap } from 'rxjs/operators';
-import { AnimaisService } from './../animais.service';
 import { UsuarioService } from 'src/app/autenticacao/usuario/usuario.service';
-import { Animais } from './../animais';
+import { AnimaisService } from './../animais.service';
 import { Component, OnInit } from '@angular/core';
+import { Animais } from './../animais';
+
 import { Observable } from 'rxjs/internal/Observable';
+import { switchMap } from 'rxjs/operators';
 
 @Component({
   selector: 'app-lista-animais',

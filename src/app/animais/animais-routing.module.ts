@@ -1,7 +1,7 @@
 import { DetalheAnimalComponent } from './detalhe-animal/detalhe-animal.component';
-import { NgModule } from '@angular/core';
-import { Routes, RouterModule } from '@angular/router';
 import { ListaAnimaisComponent } from './lista-animais/lista-animais.component';
+import { Routes, RouterModule } from '@angular/router';
+import { NgModule } from '@angular/core';
 
 const routes: Routes = [
   {

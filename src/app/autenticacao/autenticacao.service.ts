@@ -1,9 +1,10 @@
 import { environment } from './../../environments/environment.prod';
-import { Injectable } from '@angular/core';
 import { HttpClient, HttpResponse } from '@angular/common/http';
-import { Observable } from 'rxjs';
 import { UsuarioService } from './usuario/usuario.service';
+import { Injectable } from '@angular/core';
 import { tap } from 'rxjs/operators';
+
+import { Observable } from 'rxjs';
 
 const API = environment.apiURL;
 
@@ -12,8 +13,8 @@ const API = environment.apiURL;
 })
 export class AutenticacaoService {
   constructor(
+    private usuarioService: UsuarioService,
     private httpClient: HttpClient,
-    private usuarioService: UsuarioService
   ) {}
 
   autenticar(usuario: string, senha: string): Observable<HttpResponse<any>> {

@@ -1,7 +1,7 @@
 import { environment } from './../../../environments/environment';
 import { HttpClient } from '@angular/common/http';
-import { Injectable } from '@angular/core';
 import { NovoUsuario } from './novo-usuario';
+import { Injectable } from '@angular/core';
 
 const API= environment.apiURL;
 

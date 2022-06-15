@@ -9,6 +9,7 @@ import { ListaAnimaisComponent } from './lista-animais/lista-animais.component';
 import { AnimaisRoutingModule } from './animais-routing.module';
 import { AnimalComponent } from './animal/animal.component';
 import { SharedModule } from '../shared/shared.module';
+import { NovoAnimalComponent } from './novo-animal/novo-animal.component';
 
 
 @NgModule({
@@ -18,6 +19,7 @@ import { SharedModule } from '../shared/shared.module';
     ListaAnimaisComponent,
     ComentariosComponent,
     AnimalComponent,
+    NovoAnimalComponent,
   ],
   imports: [
     AnimaisRoutingModule,

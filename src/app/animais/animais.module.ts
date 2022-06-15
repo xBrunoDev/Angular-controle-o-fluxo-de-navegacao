@@ -1,6 +1,4 @@
-import { MensagemModule } from './../componentes/mensagem/mensagem.module';
 import { CartaoModule } from './../componentes/cartao/cartao.module';
-import { ReactiveFormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 
@@ -10,6 +8,7 @@ import { DetalheAnimalComponent } from './detalhe-animal/detalhe-animal.componen
 import { ListaAnimaisComponent } from './lista-animais/lista-animais.component';
 import { AnimaisRoutingModule } from './animais-routing.module';
 import { AnimalComponent } from './animal/animal.component';
+import { SharedModule } from '../shared/shared.module';
 
 
 @NgModule({
@@ -22,10 +21,9 @@ import { AnimalComponent } from './animal/animal.component';
   ],
   imports: [
     AnimaisRoutingModule,
-    ReactiveFormsModule,
-    MensagemModule,
     CommonModule,
     CartaoModule,
+    SharedModule
   ]
 })
 export class AnimaisModule { }

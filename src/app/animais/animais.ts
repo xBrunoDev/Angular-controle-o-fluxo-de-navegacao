@@ -1,5 +1,5 @@
 export interface Animal {
-  allowComents: boolean;
+  allowComments: boolean;
   description: string;
   comments: number;
   postDate: Date;

@@ -4,4 +4,4 @@ export interface Comentario {
   date: Date,
 }
 
-export type Comentarios = Array<Comentario>
+export type Comentarios = Array<Comentario>;

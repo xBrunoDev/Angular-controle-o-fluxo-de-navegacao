@@ -12,7 +12,7 @@ import { Observable } from 'rxjs';
 })
 export class DetalheAnimalComponent implements OnInit {
 
-  animalID!:number;
+  animalId!:number;
   animal$!:Observable<Animal>;
 
   constructor(
@@ -22,20 +22,20 @@ export class DetalheAnimalComponent implements OnInit {
     ) { }
 
   ngOnInit(): void {
-    this.animalID = this.activatedRoute.snapshot.params.animalId;
-    this.animal$ = this.animaisService.buscaPorID(this.animalID);
+    this.animalId = this.activatedRoute.snapshot.params.animalId;
+    this.animal$ = this.animaisService.buscaPorID(this.animalId);
   }
 
   curtir() {
-    this.animaisService.curtir(this.animalID).subscribe((curtida) => {
+    this.animaisService.curtir(this.animalId).subscribe((curtida) => {
       if (curtida) {
-        this.animal$ = this.animaisService.buscaPorID(this.animalID);
+        this.animal$ = this.animaisService.buscaPorID(this.animalId);
       }
     });
   }
 
   excluir() {
-    this.animaisService.excluiAnimal(this.animalID).subscribe(() => {
+    this.animaisService.excluiAnimal(this.animalId).subscribe(() => {
       this.router.navigate(['/animais/']);
     },
     (error) => console.log(error)
